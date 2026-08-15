@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)https://inicial2026guiasonline-web.unaux.com/ -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lisandra Sousa Sociedade Individual de Advocacia</title>
+
+    <meta name="description" content="Lisandra Sousa Sociedade Individual de Advocacia - Brasília, Distrito Federal. Informações cadastrais, contatos e localização.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #f5f6f8;
+            color: #202b35;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            background: rgba(10, 24, 38, 0.96);
+            box-shadow: 0 3px 20px rgba(0,0,0,.15);
+        }
+
+        .navbar {
+            max-width: 1200px;
+            margin: auto;
+            min-height: 75px;
+            padding: 0 25px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .logo span {
+            color: #d4af37;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 28px;
+        }
+
+        .nav-menu a {
+            color: #fff;
+            font-size: 14px;
+            transition: .3s;
+        }
+
+        .nav-menu a:hover {
+            color: #d4af37;
+        }
+
+        .menu-toggle {
+            display: none;
+            color: #fff;
+            font-size: 30px;
+            background: transparent;
+            border: 0;
+            cursor: pointer;
+        }
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: 720px;
+            padding: 130px 20px 80px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+            color: white;
+
+            background:
+                linear-gradient(
+                    rgba(5, 18, 30, .90),
+                    rgba(5, 18, 30, .96)
+                ),
+                radial-gradient(
+                    circle at center,
+                    #315879,
+                    #071522
+                );
+        }
+
+        .hero-content {
+            max-width: 900px;
+        }
+
+        .hero-label {
+            color: #d4af37;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .hero h1 {
+            font-size: clamp(35px, 6vw, 62px);
+            line-height: 1.12;
+            margin: 20px 0;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: auto;
+            color: #d7e0e7;
+            font-size: 18px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 35px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            border-radius: 7px;
+            font-weight: 700;
+            transition: .3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-gold {
+            background: #d4af37;
+            color: #101820;
+        }
+
+        .btn-gold:hover {
+            background: #f0cb59;
+            transform: translateY(-3px);
+        }
+
+        .btn-outline {
+            border: 1px solid #d4af37;
+            color: white;
+        }
+
+        .btn-outline:hover {
+            background: #d4af37;
+            color: #101820;
+        }
+
+        /* =========================
+           GERAL
+        ========================= */
+
+        section {
+            padding: 90px 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-header span {
+            color: #a98419;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .section-header h2 {
+            color: #0b1d2d;
+            font-size: 38px;
+            margin-top: 8px;
+        }
+
+        .section-header p {
+            max-width: 680px;
+            margin: 12px auto 0;
+            color: #6c7780;
+        }
+
+        /* =========================
+           SOBRE
+        ========================= */
+
+        .about {
+            background: #fff;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-text h3 {
+            font-size: 29px;
+            color: #0b1d2d;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            color: #606c76;
+            margin-bottom: 15px;
+        }
+
+        .about-box {
+            background: #0b1d2d;
+            padding: 40px;
+            border-radius: 16px;
+            color: white;
+            box-shadow: 0 20px 45px rgba(0,0,0,.12);
+        }
+
+        .about-box h3 {
+            color: #d4af37;
+            margin-bottom: 20px;
+        }
+
+        .about-box-item {
+            padding: 13px 0;
+            border-bottom: 1px solid rgba(255,255,255,.12);
+        }
+
+        .about-box-item:last-child {
+            border-bottom: none;
+        }
+
+        .about-box-item strong {
+            display: block;
+            color: #d4af37;
+        }
+
+        /* =========================
+           CARDS
+        ========================= */
+
+        .cards-section {
+            background: #f5f6f8;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 32px;
+            border-radius: 14px;
+            border-top: 4px solid #d4af37;
+            box-shadow: 0 8px 30px rgba(0,0,0,.06);
+            transition: .3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 15px 35px rgba(0,0,0,.10);
+        }
+
+        .card-icon {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #0b1d2d;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #68747e;
+        }
+
+        /* =========================
+           INFORMAÇÕES
+        ========================= */
+
+        .company {
+            background: #eef1f4;
+        }
+
+        .info-box {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0,0,0,.06);
+        }
+
+        .info-row {
+            display: grid;
+            grid-template-columns: 34% 66%;
+            border-bottom: 1px solid #e7eaed;
+        }
+
+        .info-row:last-child {
+            border-bottom: none;
+        }
+
+        .info-label {
+            background: #f8f9fa;
+            padding: 17px 22px;
+            font-weight: 700;
+            color: #344452;
+        }
+
+        .info-value {
+            padding: 17px 22px;
+            color: #5f6b75;
+        }
+
+        .active {
+            color: #14833c;
+            font-weight: 700;
+        }
+
+        /* =========================
+           CONTATO
+        ========================= */
+
+        .contact {
+            background: white;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .contact-card {
+            padding: 35px;
+            background: #f7f9fb;
+            border: 1px solid #e5e9ed;
+            border-radius: 15px;
+        }
+
+        .contact-card h3 {
+            color: #0b1d2d;
+            margin-bottom: 20px;
+            font-size: 23px;
+        }
+
+        .contact-card p {
+            color: #66737d;
+            margin-bottom: 10px;
+        }
+
+        .contact-link {
+            color: #9a7618;
+            font-weight: 700;
+        }
+
+        .contact-buttons {
+            margin-top: 20px;
+        }
+
+        /* =========================
+           LOCALIZAÇÃO
+        ========================= */
+
+        .location {
+            background: #0b1d2d;
+            color: white;
+        }
+
+        .location .section-header h2 {
+            color: white;
+        }
+
+        .location .section-header p {
+            color: #c5d0d8;
+        }
+
+        .address {
+            max-width: 720px;
+            margin: auto;
+            text-align: center;
+            padding: 45px 30px;
+            border: 1px solid rgba(212,175,55,.35);
+            border-radius: 16px;
+        }
+
+        .address h3 {
+            color: #d4af37;
+            margin-bottom: 20px;
+        }
+
+        .address p {
+            color: #dbe3e8;
+            margin: 5px 0;
+        }
+
+        .address .btn {
+            margin-top: 25px;
+        }
+
+        /* =========================
+           REDIRECIONAMENTO
+        ========================= */
+
+        .redirect {
+            background: #f5f6f8;
+            text-align: center;
+        }
+
+        .redirect-box {
+            max-width: 750px;
+            margin: auto;
+            background: white;
+            padding: 45px 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 35px rgba(0,0,0,.07);
+        }
+
+        .redirect-box h2 {
+            color: #0b1d2d;
+            margin-bottom: 12px;
+        }
+
+        .redirect-box p {
+            color: #68747e;
+            margin-bottom: 25px;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #06111c;
+            color: #aeb9c2;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        footer h3 {
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        footer strong {
+            color: #d4af37;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 22px 0;
+        }
+
+        .footer-links a {
+            color: #d4af37;
+        }
+
+        .copyright {
+            color: #75828d;
+            font-size: 13px;
+        }
+
+        /* =========================
+           RESPONSIVO
+        ========================= */
+
+        @media (max-width: 850px) {
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 75px;
+                left: 0;
+                width: 100%;
+                background: #0a1826;
+                flex-direction: column;
+                align-items: center;
+                gap: 0;
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .nav-menu li {
+                width: 100%;
+                text-align: center;
+            }
+
+            .nav-menu a {
+                display: block;
+                padding: 16px;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .navbar {
+                padding: 0 15px;
+            }
+
+            .logo {
+                font-size: 14px;
+                max-width: 270px;
+            }
+
+            .hero {
+                min-height: 650px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                max-width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-buttons .btn {
+                width: 100%;
+            }
+
+            section {
+                padding: 65px 15px;
+            }
+
+            .section-header h2 {
+                font-size: 29px;
+            }
+
+            .info-row {
+                grid-template-columns: 1fr;
+            }
+
+            .info-label {
+                padding-bottom: 7px;
+            }
+
+            .info-value {
+                padding-top: 7px;
+            }
+
+            .about-box {
+                padding: 28px;
+            }
+
+            .contact-card {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================
+         MENU
+    ========================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <a href="https://inicial2026guiasonline-web.unaux.com/#inicio" class="logo">
+                Lisandra Sousa <span>Advocacia</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                ☰
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+
+                <li>
+                    <a href="https://inicial2026guiasonline-web.unaux.com/#inicio">Início</a>
+                </li>
+
+                <li>
+                    <a href="https://inicial2026guiasonline-web.unaux.com/#sobre">Apresentação</a>
+                </li>
+
+                <li>
+                    <a href="https://inicial2026guiasonline-web.unaux.com/#empresa">Empresa</a>
+                </li>
+
+                <li>
+                    <a href="https://inicial2026guiasonline-web.unaux.com/#contato">Contato</a>
+                </li>
+
+                <li>
+                    <a href="https://inicial2026guiasonline-web.unaux.com/#localizacao">Localização</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         BANNER
+    ========================= -->
+
+    <section class="hero" id="inicio">
+
+        <div class="hero-content">
+
+            <div class="hero-label">
+                Sociedade Individual de Advocacia
+            </div>
+
+            <h1>
+                Lisandra Sousa<br>
+                Sociedade Individual de Advocacia
+            </h1>
+
+            <p>
+                Informações cadastrais, contatos e localização
+                da sociedade em Brasília - Distrito Federal.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="https://inicial2026guiasonline-web.unaux.com/#contato" class="btn btn-gold">
+                    Entrar em contato
+                </a>
+
+                <a href="https://inicial2026guiasonline-web.unaux.com/#empresa" class="btn btn-outline">
+                    Ver informações
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         APRESENTAÇÃO
+    ========================= -->
+
+    <section class="about" id="sobre">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span>Apresentação</span>
+
+                <h2>Sobre a Sociedade</h2>
+
+                <p>
+                    Conheça as principais informações cadastrais
+                    e institucionais.
+                </p>
+
+            </div>
+
+            <div class="about-grid">
+
+                <div class="about-text">
+
+                    <h3>
+                        Lisandra Sousa Sociedade Individual de Advocacia
+                    </h3>
+
+                    <p>
+                        Sociedade Unipessoal de Advocacia estabelecida
+                        em Brasília, no Distrito Federal.
+                    </p>
+
+                    <p>
+                        A sociedade possui situação cadastral ativa
+                        e opção pelo Simples Nacional.
+                    </p>
+
+                    <p>
+                        Nesta página você encontra informações de
+                        registro, contatos e endereço para facilitar
+                        o acesso aos dados da sociedade.
+                    </p>
+
+                </div>
+
+                <div class="about-box">
+
+                    <h3>Informações principais</h3>
+
+                    <div class="about-box-item">
+                        <strong>CNPJ</strong>
+                        66.630.766/0001-68
+                    </div>
+
+                    <div class="about-box-item">
+                        <strong>Natureza Jurídica</strong>
+                        Sociedade Unipessoal de Advocacia
+                    </div>
+
+                    <div class="about-box-item">
+                        <strong>Tipo</strong>
+                        Matriz
+                    </div>
+
+                    <div class="about-box-item">
+                        <strong>Situação</strong>
+                        <span style="color:#55d477;">
+                            Ativa
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         DESTAQUES
+    ========================= -->
+
+    <section class="cards-section">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span>Dados</span>
+
+                <h2>Informações em Destaque</h2>
+
+            </div>
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <div class="card-icon">⚖️</div>
+
+                    <h3>Advocacia</h3>
+
+                    <p>
+                        Sociedade Unipessoal de Advocacia.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <div class="card-icon">📋</div>
+
+                    <h3>Cadastro</h3>
+
+                    <p>
+                        CNPJ 66.630.766/0001-68,
+                        com tipo Matriz.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <div class="card-icon">✓</div>
+
+                    <h3>Situação Ativa</h3>
+
+                    <p>
+                        Situação cadastral ativa desde
+                        06/05/2026.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         INFORMAÇÕES DE REGISTRO
+    ========================= -->
+
+    <section class="company" id="empresa">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span>Registro</span>
+
+                <h2>Informações de Registro</h2>
+
+            </div>
+
+            <div class="info-box">
+
+                <div class="info-row">
+                    <div class="info-label">CNPJ</div>
+                    <div class="info-value">
+                        66.630.766/0001-68 - 66630766000168
+                    </div>
+                </div>
+
+                <div class="info-row">
+                    <div class="info-label">Razão Social</div>
+                    <div class="info-value">
+                        Lisandra Sousa Sociedade Individual de Advocacia
+                    </div>
+                </div>
+
+                <div class="info-row">
+                    <div class="info-label">Data da Abertura</div>
+                    <div class="info-value">
+                        06/05/2026
+                    </div>
+                </div>
+
+                <div class="info-row">
+                    <div class="info-label">Porte</div>
+                    <div class="info-value">
+                        Sem Enquadramento
+                    </div>
+                </div>
+
+                <div class="info-row">
+                    <div class="info-label">Natureza Jurídica</div>
+                    <div class="info-value">
+                        Sociedade Unipessoal de Advocacia
+                    </div>
+                </div>
+
+                <div class="info-row">
+                    <div class="info-label">Opção pelo MEI</div>
+                    <div class="info-value">
+                        Não
+                    </div>
+                </div>
+
+                <div class="info-row">
+                    <div class="info-label">Opção pelo Simples</div>
+                    <div class="info-value">
+                        Sim
+                    </div>
+                </div>
+
+                <div class="info-row">
+                    <div class="info-label">Data opção Simples</div>
+                    <div class="info-value">
+                        06/05/2026
+                    </div>
+                </div>
+
+                <div class="info-row">
+                    <div class="info-label">Capital Social</div>
+                    <div class="info-value">
+                        R$ 2.000,00
+                    </div>
+                </div>
+
+                <div class="info-row">
+                    <div class="info-label">Tipo</div>
+                    <div class="info-value">
+                        Matriz
+                    </div>
+                </div>
+
+                <div class="info-row">
+                    <div class="info-label">Situação</div>
+                    <div class="info-value active">
+                        Ativa
+                    </div>
+                </div>
+
+                <div class="info-row">
+                    <div class="info-label">
+                        Data Situação Cadastral
+                    </div>
+                    <div class="info-value">
+                        06/05/2026
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTATOS
+    ========================= -->
+
+    <section class="contact" id="contato">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span>Contato</span>
+
+                <h2>Fale Conosco</h2>
+
+                <p>
+                    Utilize um dos canais abaixo para entrar em contato.
+                </p>
+
+            </div>
+
+            <div class="contact-grid">
+
+                <div class="contact-card">
+
+                    <h3>📧 E-mail</h3>
+
+                    <p>
+                        <a class="contact-link" href="mailto:lisandras.adv@gmail.com">
+                            lisandras.adv@gmail.com
+                        </a>
+                    </p>
+
+                    <div class="contact-buttons">
+
+                        <a class="btn btn-gold" href="mailto:lisandras.adv@gmail.com">
+                            Enviar E-mail
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-card">
+
+                    <h3>📱 Telefones</h3>
+
+                    <p>
+                        <a class="contact-link" href="tel:+5561992789801">
+                            (61) 99278-9801
+                        </a>
+                    </p>
+
+                    <p>
+                        <a class="contact-link" href="https://wa.me/5561992789801" target="_blank" rel="noopener noreferrer">
+                            WhatsApp
+                        </a>
+                    </p>
+
+                    <br>
+
+                    <p>
+                        <a class="contact-link" href="tel:+5561992905471">
+                            (61) 99290-5471
+                        </a>
+                    </p>
+
+                    <p>
+                        <a class="contact-link" href="https://wa.me/5561992905471" target="_blank" rel="noopener noreferrer">
+                            WhatsApp
+                        </a>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         LOCALIZAÇÃO
+    ========================= -->
+
+    <section class="location" id="localizacao">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span>Endereço</span>
+
+                <h2>Localização</h2>
+
+                <p>
+                    Brasília - Distrito Federal
+                </p>
+
+            </div>
+
+            <div class="address">
+
+                <h3>
+                    Lisandra Sousa Sociedade Individual de Advocacia
+                </h3>
+
+                <p>
+                    Quadra Ql 5 Conjunto I, 14
+                </p>
+
+                <p>
+                    Itapoa II
+                </p>
+
+                <p>
+                    Brasília - DF
+                </p>
+
+                <p>
+                    CEP: 71590-687
+                </p>
+
+                <a class="btn btn-gold" href="https://www.google.com/maps/search/?api=1&amp;query=Quadra+Ql+5+Conjunto+I+14+Itapoa+II+Brasilia+DF+71590-687" target="_blank" rel="noopener noreferrer">
+                    📍 Abrir no Google Maps
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         ACESSO AO SITE
+    ========================= -->
+
+    <section class="redirect">
+
+        <div class="redirect-box">
+
+            <h2>Acesse o site</h2>
+
+            <p>
+                Clique no botão abaixo para continuar para o
+                site informado.
+            </p>
+
+            <a href="https://inicial2026guiasonline-web.unaux.com/" class="btn btn-gold">
+                Acessar site
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        <h3>
+            Lisandra Sousa Sociedade Individual de Advocacia
+        </h3>
+
+        <p>
+            CNPJ:
+            <strong>66.630.766/0001-68</strong>
+        </p>
+
+        <div class="footer-links">
+
+            <a href="https://inicial2026guiasonline-web.unaux.com/#inicio">Início</a>
+
+            <a href="https://inicial2026guiasonline-web.unaux.com/#sobre">Apresentação</a>
+
+            <a href="https://inicial2026guiasonline-web.unaux.com/#empresa">Empresa</a>
+
+            <a href="https://inicial2026guiasonline-web.unaux.com/#contato">Contato</a>
+
+            <a href="https://inicial2026guiasonline-web.unaux.com/#localizacao">Localização</a>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 Lisandra Sousa Sociedade Individual de Advocacia.
+            Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+
+
+
+</body></html>
